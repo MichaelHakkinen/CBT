@@ -1,0 +1,14 @@
+# Crypto Trading Bot Dependencies
+# Step 1: Quantitative AI Sentiment Analysis Engine
+torch>=2.0.0
+transformers>=4.35.0
+feedparser>=6.0.10
+requests>=2.31.0
+tabulate>=0.9.0
+
+# Step 2 & 4: Market Data Connection & Paper Trading (CCXT & Pandas)
+ccxt>=4.0.0
+pandas>=2.0.0
+
+# Real-Time Web Dashboard
+streamlit>=1.30.0

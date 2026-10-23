@@ -1,0 +1,208 @@
+2026-10-23 10:34:24 UTC [INFO] [PaperTrader] No live Binance Testnet API key provided. Running in HIGH-FIDELITY LOCAL PAPER TRADING mode (Starting Balance: $1000.00 USDT).
+2026-10-23 10:34:24 UTC [INFO] [CBT_Internal] CBT 24/7 Engine initialized. Symbols=['SOL/USDT'] | Cadence=300s | LogFile=trading_bot.log
+2026-10-23 10:34:24 UTC [INFO] [CBT_Internal] 24/7 Loop Started. Interval=300s, MaxCycles=1
+2026-10-23 10:34:24 UTC [INFO] [CBT_Internal] -------------------- CYCLE #1 [2026-10-23 03:34:24 UTC] --------------------
+2026-10-23 10:34:24 UTC [INFO] [CBT_Internal] Starting pipeline for SOL/USDT...
+2026-10-23 10:34:24 UTC [INFO] [DecisionEngine] Executing Decision Engine for SOL/USDT (Solana)...
+2026-10-23 10:34:24 UTC [INFO] [DecisionEngine] [Factor 1] Ingesting RSS headlines for 'Solana'...
+2026-10-23 10:34:24 UTC [INFO] [CryptoSentiment] Querying 5 live RSS feeds for 'Solana'...
+2026-10-23 10:34:24 UTC [INFO] [CryptoSentiment] Retrieved 6 relevant headlines.
+2026-10-23 10:34:24 UTC [INFO] [CryptoSentiment] Loading 'ProsusAI/finbert' on cpu...
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.connection] connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=None socket_options=None
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.connection] connect_tcp.complete return_value=<httpcore2._backends.sync.SyncStream object at 0x0000023A7272B1D0>
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.connection] start_tls.started ssl_context=<truststore._api.SSLContext object at 0x0000023A7236B950> server_hostname='huggingface.co' timeout=None
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.connection] start_tls.complete return_value=<httpcore2._backends.sync.SyncStream object at 0x0000023A71764B90>
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:34:25 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"136f-vhatS/N4AtGVNF7V59f1794U2f0"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad5c1-40d78b763d3b82951092755c;c3f86d44-dd40-45b8-b3e3-7c41c06f6767'), (b'RateLimit', b'"api";r=499;t=104'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 111a6fc31e27faf8cf805a928b2c5d9c.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'YcrP5vtGvyI7e198-1HgPEDgZzVNE-yQOs3tZ627Utl6vmBSubodkA=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:34:24 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert "HTTP/1.1 200 OK"
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:34:24 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'64'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:34:26 GMT'), (b'ETag', b'W/"40-09f9IAqP13xarAhQxFS2W8rvRkM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad5c2-3bd99edf5c68f83421e75541;1816a1b5-7cba-4e54-8691-8bc9a2c2f369'), (b'RateLimit', b'"api";r=498;t=103'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'EntryNotFound'), (b'X-Error-Message', b'additional_chat_templates does not exist on "main"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 111a6fc31e27faf8cf805a928b2c5d9c.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'IrG486A3aDaDAsEf92e5ToiVHDL1Z782G-896CbJZ1Jv8_HXKBns5A=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:34:25 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:34:26 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"713-j86WQILGFt6/vxOFWhGC6r6mVfM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad5c2-624802dd217b084a591d6c66;205b6a4a-087b-497c-ac26-5fae586edfdb'), (b'RateLimit', b'"api";r=497;t=103'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 111a6fc31e27faf8cf805a928b2c5d9c.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'sA4w3BrQsFB7LHpkKPbLsEsqPw4wizRlOSUCBNmRSifr6yjaNP_Xhg=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:34:25 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:34:26 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"136f-vhatS/N4AtGVNF7V59f1794U2f0"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad5c2-2615be350e3636485624775f;fe0e0eae-e1fb-4ff8-93bb-a0cb77b89178'), (b'RateLimit', b'"api";r=496;t=103'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 111a6fc31e27faf8cf805a928b2c5d9c.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'1HX5aMw-lyjFnlmKvjjzxl1BEdwm9RN92xMArgC8GN99bFwjXCzNwA=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:34:25 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert "HTTP/1.1 200 OK"
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:34:25 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:34:26 UTC [INFO] [CryptoSentiment] FinBERT initialized successfully with labels: {0: 'positive', 1: 'negative', 2: 'neutral'}
+2026-10-23 10:34:27 UTC [INFO] [DecisionEngine] [Factor 2] Fetching live ticker for 'SOL/USDT'...
+2026-10-23 10:34:27 UTC [INFO] [MarketData] Binance exchange initialized (RateLimit: ENABLED, Timeout: 10000ms, Mirror: Active)
+2026-10-23 10:34:27 UTC [INFO] [MarketData] Fetching live ticker for 'SOL/USDT'...
+2026-10-23 10:34:28 UTC [INFO] [CBT_Internal] [SOL/USDT] Price=$104.2700 | 24h Chg=-0.81% | Vol=$174388818.47 | Sentiment=+0.3344 (Bullish) | Verdict=HOLD | Rationale='BULLISH DIVERGENCE: Sentiment is bullish (+0.33), but price action is lagging/negative (-0.81%). Wait for price confirmation before entry.'
+2026-10-23 10:34:28 UTC [INFO] [CBT_CMD] [CYCLE #1] SOL/USDT | Price: $   104.27 (-0.81%) | Sent: +0.33 (Bullish) | Action: HOLD (In Cash) | Cash: $1,000.00 USDT
+2026-10-23 10:34:28 UTC [INFO] [CBT_CMD] [CYCLE #1] SOL/USDT | Price: $   104.27 (-0.81%) | Sent: +0.33 (Bullish) | Action: HOLD (In Cash) | Cash: $1,000.00 USDT
+2026-10-23 10:34:28 UTC [INFO] [CBT_CMD] [COMPLETE] Finished target cycle count (1).
+2026-10-23 10:34:28 UTC [INFO] [CBT_CMD] [COMPLETE] Finished target cycle count (1).
+2026-10-23 10:34:28 UTC [INFO] [CBT_Internal] Session ended safely. Realized PnL=$0.00. Total trades=0.
+2026-10-23 10:34:28 UTC [DEBUG] [httpcore2.connection] close.started
+2026-10-23 10:34:28 UTC [DEBUG] [httpcore2.connection] close.complete
+2026-10-23 10:36:15 UTC [INFO] [PaperTrader] No live Binance Testnet API key provided. Running in HIGH-FIDELITY LOCAL PAPER TRADING mode (Starting Balance: $1000.00 USDT).
+2026-10-23 10:36:15 UTC [INFO] [CBT_Internal] CBT 24/7 Engine initialized. Symbols=['SOL/USDT'] | Cadence=300s | LogFile=trading_bot.log
+2026-10-23 10:36:15 UTC [INFO] [CBT_Internal] 24/7 Loop Started. Interval=300s, MaxCycles=1
+2026-10-23 10:36:15 UTC [INFO] [CBT_Internal] -------------------- CYCLE #1 [2026-10-23 03:36:15 UTC] --------------------
+2026-10-23 10:36:15 UTC [INFO] [CBT_Internal] Starting pipeline for SOL/USDT...
+2026-10-23 10:36:15 UTC [INFO] [DecisionEngine] Executing Decision Engine for SOL/USDT (Solana)...
+2026-10-23 10:36:15 UTC [INFO] [DecisionEngine] [Factor 1] Ingesting RSS headlines for 'Solana'...
+2026-10-23 10:36:15 UTC [INFO] [CryptoSentiment] Querying 5 live RSS feeds for 'Solana'...
+2026-10-23 10:36:17 UTC [INFO] [CryptoSentiment] Retrieved 2 relevant headlines.
+2026-10-23 10:36:17 UTC [INFO] [CryptoSentiment] Loading 'ProsusAI/finbert' on cpu...
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.connection] connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=None socket_options=None
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.connection] connect_tcp.complete return_value=<httpcore2._backends.sync.SyncStream object at 0x0000024642BCABA0>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.connection] start_tls.started ssl_context=<truststore._api.SSLContext object at 0x00000246437C7A50> server_hostname='huggingface.co' timeout=None
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.connection] start_tls.complete return_value=<httpcore2._backends.sync.SyncStream object at 0x000002464369C740>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:36:18 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"136f-vhatS/N4AtGVNF7V59f1794U2f0"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad632-3b0d40fa31b2326f1c0e997f;91b23ac2-889d-4ee3-a185-d72b77e19b37'), (b'RateLimit', b'"api";r=499;t=291'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 c8ee1483012f938e4c0cb1b35eb31ae4.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'EChsTvBVSI7ZqmPohxUuqbPwFKYRIDuxs85ffqlZdtGujnBISSImEw=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:36:17 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert "HTTP/1.1 200 OK"
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'64'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:36:18 GMT'), (b'ETag', b'W/"40-09f9IAqP13xarAhQxFS2W8rvRkM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad632-7dc95fc13d9fed2d0d5c3066;1179664a-6f8a-4c80-92b5-f7913cce33a3'), (b'RateLimit', b'"api";r=498;t=291'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'EntryNotFound'), (b'X-Error-Message', b'additional_chat_templates does not exist on "main"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 c8ee1483012f938e4c0cb1b35eb31ae4.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'NOqIIt7-j0dIyN_bjU26PTNzdhapcCfoP3CQM0ul9-Jc0VDwMNUgsA=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:36:17 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:36:17 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:36:19 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"713-j86WQILGFt6/vxOFWhGC6r6mVfM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad633-7967a36548beba7d6febddc4;be17662c-d62b-46c6-aef6-c4006735b08d'), (b'RateLimit', b'"api";r=497;t=290'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 c8ee1483012f938e4c0cb1b35eb31ae4.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'UM08EAhwbqlN-iKgb-tQDpPhKbMK7AShVQax3_ARwPJt5mA6Q4r7XA=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:36:18 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:36:19 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"136f-vhatS/N4AtGVNF7V59f1794U2f0"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad633-40c9f43e569bc66941b78617;3d8f1f19-b981-49a2-81f7-8c7b7821f9c2'), (b'RateLimit', b'"api";r=496;t=290'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 c8ee1483012f938e4c0cb1b35eb31ae4.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'qmzagoKWtsFhA-NkZAfnGUE8e4Hvilh3Cb__JjXvS08wVhazP6PF-g=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:36:18 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert "HTTP/1.1 200 OK"
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:36:18 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:36:19 UTC [INFO] [CryptoSentiment] FinBERT initialized successfully with labels: {0: 'positive', 1: 'negative', 2: 'neutral'}
+2026-10-23 10:36:19 UTC [INFO] [DecisionEngine] [Factor 2] Fetching live ticker for 'SOL/USDT'...
+2026-10-23 10:36:19 UTC [INFO] [MarketData] Binance exchange initialized (RateLimit: ENABLED, Timeout: 10000ms, Mirror: Active)
+2026-10-23 10:36:19 UTC [INFO] [MarketData] Fetching live ticker for 'SOL/USDT'...
+2026-10-23 10:36:21 UTC [INFO] [CBT_Internal] [SOL/USDT] Price=$104.2400 | 24h Chg=-0.97% | Vol=$173643577.53 | Sentiment=+0.3922 (Bullish) | Verdict=HOLD | Rationale='BULLISH DIVERGENCE: Sentiment is bullish (+0.39), but price action is lagging/negative (-0.97%). Wait for price confirmation before entry.'
+2026-10-23 10:36:21 UTC [INFO] [CBT_CMD] [CYCLE #1] SOL/USDT | Price: $   104.24 (-0.97%) | Sent: +0.39 (Bullish) | Action: HOLD (In Cash) | Cash: $1,000.00 USDT
+2026-10-23 10:36:21 UTC [INFO] [CBT_CMD] [CYCLE #1] SOL/USDT | Price: $   104.24 (-0.97%) | Sent: +0.39 (Bullish) | Action: HOLD (In Cash) | Cash: $1,000.00 USDT
+2026-10-23 10:36:21 UTC [INFO] [CBT_CMD] [COMPLETE] Finished target cycle count (1).
+2026-10-23 10:36:21 UTC [INFO] [CBT_CMD] [COMPLETE] Finished target cycle count (1).
+2026-10-23 10:36:21 UTC [INFO] [CBT_Internal] Session ended safely. Realized PnL=$0.00. Total trades=0.
+2026-10-23 10:36:21 UTC [DEBUG] [httpcore2.connection] close.started
+2026-10-23 10:36:21 UTC [DEBUG] [httpcore2.connection] close.complete
+2026-10-23 10:36:58 UTC [INFO] [PaperTrader] No live Binance Testnet API key provided. Running in HIGH-FIDELITY LOCAL PAPER TRADING mode (Starting Balance: $1000.00 USDT).
+2026-10-23 10:36:58 UTC [INFO] [CBT_Internal] CBT 24/7 Engine initialized. Symbols=['SOL/USDT'] | Cadence=300s | LogFile=trading_bot.log
+2026-10-23 10:36:58 UTC [INFO] [CBT_Internal] 24/7 Loop Started. Interval=300s, MaxCycles=1
+2026-10-23 10:36:58 UTC [INFO] [CBT_Internal] -------------------- CYCLE #1 [2026-10-23 03:36:58 UTC] --------------------
+2026-10-23 10:36:58 UTC [INFO] [CBT_Internal] Starting pipeline for SOL/USDT...
+2026-10-23 10:36:58 UTC [INFO] [DecisionEngine] Executing Decision Engine for SOL/USDT (Solana)...
+2026-10-23 10:36:58 UTC [INFO] [DecisionEngine] [Factor 1] Ingesting RSS headlines for 'Solana'...
+2026-10-23 10:36:58 UTC [INFO] [CryptoSentiment] Querying 5 live RSS feeds for 'Solana'...
+2026-10-23 10:36:59 UTC [INFO] [CryptoSentiment] Retrieved 2 relevant headlines.
+2026-10-23 10:36:59 UTC [INFO] [CryptoSentiment] Loading 'ProsusAI/finbert' on cpu...
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.connection] connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=None socket_options=None
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.connection] connect_tcp.complete return_value=<httpcore2._backends.sync.SyncStream object at 0x0000011AFAA67E90>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.connection] start_tls.started ssl_context=<truststore._api.SSLContext object at 0x0000011AFAAB39D0> server_hostname='huggingface.co' timeout=None
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.connection] start_tls.complete return_value=<httpcore2._backends.sync.SyncStream object at 0x0000011AFA8DC0E0>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:37:00 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"136f-vhatS/N4AtGVNF7V59f1794U2f0"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad65c-63878ddd28acd1d97c47f6e8;52349dfd-d362-4325-b95f-f52f5f0fd304'), (b'RateLimit', b'"api";r=495;t=249'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 56677f19671e63bcf5a13c4868a3a738.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'09FI--GgQWg4kJma5uoEGXZmeLwAfcu117Qaq-n62wyCEMPNHvMMNw=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:36:59 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert "HTTP/1.1 200 OK"
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'64'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:37:00 GMT'), (b'ETag', b'W/"40-09f9IAqP13xarAhQxFS2W8rvRkM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad65c-294043b13559d3c325895017;098422a6-1a4a-4161-9ef2-88f0e734c5df'), (b'RateLimit', b'"api";r=494;t=249'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Error-Code', b'EntryNotFound'), (b'X-Error-Message', b'additional_chat_templates does not exist on "main"'), (b'X-Cache', b'Error from cloudfront'), (b'Via', b'1.1 56677f19671e63bcf5a13c4868a3a738.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'2viL3_T13MOGvhT8BI3F7VJu6WWp6QC2DOQ4Go3u-Zaog9gtIaG2lQ=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:36:59 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:36:59 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:37:01 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"713-j86WQILGFt6/vxOFWhGC6r6mVfM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad65d-2895c48672134ccc54bbf842;16e7efb0-71a2-4edc-a1ee-fe6cff744860'), (b'RateLimit', b'"api";r=493;t=248'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 56677f19671e63bcf5a13c4868a3a738.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'_oCqj4ReeqbSpzjoWhjjKw1kVY-ACgb4k_Bu-uCIphEDreaY71MJrg=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:37:00 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] send_request_headers.started request=<Request [b'GET']>
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] send_request_headers.complete
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] send_request_body.started request=<Request [b'GET']>
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] send_request_body.complete
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] receive_response_headers.started request=<Request [b'GET']>
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Fri, 23 Oct 2026 03:37:01 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"136f-vhatS/N4AtGVNF7V59f1794U2f0"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6adad65d-4acda9ba370538026c635beb;0a52d2a6-8070-46f8-9c6e-6b57e8580993'), (b'RateLimit', b'"api";r=492;t=248'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 56677f19671e63bcf5a13c4868a3a738.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'pfMhuMbEYHSK9qJrX8xtPmyw6jwHqIBmP7PTrE9LO6rrmOcesx3IVQ=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+2026-10-23 10:37:00 UTC [INFO] [httpx2] HTTP Request: GET https://huggingface.co/api/models/ProsusAI/finbert "HTTP/1.1 200 OK"
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] receive_response_body.started request=<Request [b'GET']>
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] receive_response_body.complete
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] response_closed.started
+2026-10-23 10:37:00 UTC [DEBUG] [httpcore2.http11] response_closed.complete
+2026-10-23 10:37:01 UTC [INFO] [CryptoSentiment] FinBERT initialized successfully with labels: {0: 'positive', 1: 'negative', 2: 'neutral'}
+2026-10-23 10:37:01 UTC [INFO] [DecisionEngine] [Factor 2] Fetching live ticker for 'SOL/USDT'...
+2026-10-23 10:37:01 UTC [INFO] [MarketData] Binance exchange initialized (RateLimit: ENABLED, Timeout: 10000ms, Mirror: Active)
+2026-10-23 10:37:01 UTC [INFO] [MarketData] Fetching live ticker for 'SOL/USDT'...
+2026-10-23 10:37:03 UTC [INFO] [CBT_Internal] [SOL/USDT] Price=$104.2500 | 24h Chg=-1.05% | Vol=$173567013.42 | Sentiment=+0.3922 (Bullish) | Verdict=HOLD | Rationale='BULLISH DIVERGENCE: Sentiment is bullish (+0.39), but price action is lagging/negative (-1.05%). Wait for price confirmation before entry.'
+2026-10-23 10:37:03 UTC [INFO] [CBT_CMD] [CYCLE #1] SOL/USDT | Price: $   104.25 (-1.05%) | Sent: +0.39 (Bullish) | Action: HOLD (In Cash) | Cash: $1,000.00 USDT
+2026-10-23 10:37:03 UTC [INFO] [CBT_CMD] [COMPLETE] Finished target cycle count (1).
+2026-10-23 10:37:03 UTC [INFO] [CBT_Internal] Session ended safely. Realized PnL=$0.00. Total trades=0.
+2026-10-23 10:37:03 UTC [DEBUG] [httpcore2.connection] close.started
+2026-10-23 10:37:03 UTC [DEBUG] [httpcore2.connection] close.complete
